@@ -32,3 +32,6 @@ lang: ''
 https://developer.apple.com/forums/thread/766270
 但是似乎并没有官方回复说问题已经修复  
 这两天使用26后，并没有出现新增的问题app，bug情况还有待观察
+
+三编：
+使用了一周后出现了该bug，确定26并没有修复
