@@ -1,7 +1,7 @@
 /* This is a script to create a new post markdown file with front-matter */
 
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 function getDate() {
 	const today = new Date();
@@ -30,7 +30,7 @@ const dateStr = getDate();
 let fullPath;
 let fileName;
 
-if (mode === "file") {
+if (mode === "1" || mode === "file") {
 	// File mode: create date-based file
 	const baseFileName = dateStr;
 	fileName = `${baseFileName}.md`;
@@ -40,7 +40,7 @@ if (mode === "file") {
 		counter++;
 	}
 	fullPath = path.join(targetDir, fileName);
-} else if (mode === "folder") {
+} else if (mode === "2" || mode === "folder") {
 	// Folder mode: create date-based folder with index.md
 	let folderName = dateStr;
 	let counter = 1;
@@ -59,7 +59,7 @@ if (mode === "file") {
 	fullPath = path.join(folderPath, fileName);
 } else {
 	console.error(`Error: Invalid mode '${mode}'
-Valid modes: file, folder`);
+Valid modes: 1 file, 2 folder`);
 	process.exit(1);
 }
 
