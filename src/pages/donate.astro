@@ -1,0 +1,92 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+// 赞助者数据类型定义
+interface Donor {
+	name: string;
+	amount: string;
+	date: string;
+	message?: string;
+}
+
+// 赞助者列表数据
+// 你可以在这里添加真实的赞助者信息
+const donors: Donor[] = [
+	//   { name: "示例用户", amount: "¥10.00", date: "2023-10-01", message: "加油！" },
+];
+
+const title = "请我喝一杯奶茶";
+const description = "如果对你有所帮助，欢迎请我喝杯奶茶！";
+---
+
+<MainGridLayout title={title} description={description}>
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <h1 class="text-2xl font-bold mb-4 text-black/90 dark:text-white/90">{title}</h1>
+            <p class="mb-8 text-black/75 dark:text-white/75">{description}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 justify-items-center">
+                <!-- 微信支付 -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-72 h-72 bg-white dark:bg-black/20 rounded-2xl flex items-center justify-center mb-4 overflow-hidden shadow-lg group-hover:shadow-2xl group-hover:-translate-y-1 transition-all duration-300 relative border border-black/5 dark:border-white/10">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="w-64 h-64 relative z-10 bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden shadow-inner flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500">
+                                <span class="block text-4xl mb-2">💚</span>
+                                <span>微信支付</span>
+                            </div>
+                            <img src="/images/wechat-pay.jpg" alt="微信支付" class="w-full h-full object-cover relative z-10" />
+                        </div>
+                    </div>
+                    <span class="font-bold text-lg text-black/75 dark:text-white/75 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">微信支付</span>
+                </div>
+
+                <!-- 支付宝 -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-72 h-72 bg-white dark:bg-black/20 rounded-2xl flex items-center justify-center mb-4 overflow-hidden shadow-lg group-hover:shadow-2xl group-hover:-translate-y-1 transition-all duration-300 relative border border-black/5 dark:border-white/10">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="w-64 h-64 relative z-10 bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden shadow-inner flex items-center justify-center">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400 dark:text-gray-500">
+                                <span class="block text-4xl mb-2">💙</span>
+                                <span>支付宝</span>
+                            </div>
+                            <img src="/images/alipay.jpg" alt="支付宝" class="w-full h-full object-cover relative z-10" />
+                        </div>
+                    </div>
+                    <span class="font-bold text-lg text-black/75 dark:text-white/75 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">支付宝</span>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 dark:border-gray-700 mb-8" />
+
+            <h2 class="text-xl font-bold mb-6 text-black/90 dark:text-white/90">赞助者清单</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-200 dark:border-gray-700 text-black/60 dark:text-white/60">
+                            <th class="py-3 px-4 font-semibold">赞助者</th>
+                            <th class="py-3 px-4 font-semibold">金额</th>
+                            <th class="py-3 px-4 font-semibold">日期</th>
+                            <th class="py-3 px-4 font-semibold">留言</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-black/75 dark:text-white/75">
+                        {donors.map((donor) => (
+                            <tr class="border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                                <td class="py-3 px-4">{donor.name}</td>
+                                <td class="py-3 px-4">{donor.amount}</td>
+                                <td class="py-3 px-4">{donor.date}</td>
+                                <td class="py-3 px-4 text-black/50 dark:text-white/50">{donor.message}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+                {donors.length === 0 && (
+                    <div class="text-center py-12 text-black/30 dark:text-white/30">
+                        <p>暂无赞助者，期待你的支持！</p>
+                    </div>
+                )}
+            </div>
+        </div>
+    </div>
+</MainGridLayout>
