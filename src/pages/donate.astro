@@ -1,19 +1,7 @@
 ---
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-// 赞助者数据类型定义
-interface Donor {
-	name: string;
-	amount: string;
-	date: string;
-	message?: string;
-}
-
-// 赞助者列表数据
-// 你可以在这里添加真实的赞助者信息
-const donors: Donor[] = [
-	//   { name: "示例用户", amount: "¥10.00", date: "2023-10-01", message: "加油！" },
-];
+import { donors } from "../data/donors";
 
 const title = "请我喝一杯奶茶";
 const description = "如果对你有所帮助，请赞助我喝杯奶茶！";
