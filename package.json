@@ -4,6 +4,8 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "astro dev",
+		"clean": "sh ./scripts/clean.sh",
+		"clean:all": "sh ./scripts/clean.sh all",
 		"start": "astro dev",
 		"check": "astro check",
 		"build": "astro build && pagefind --site dist",
