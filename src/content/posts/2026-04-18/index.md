@@ -2,6 +2,7 @@
 title: "主动型AI Agent科研进展：基础模型与Harness工程"
 published: 2026-04-18
 description: '深度分析2025-2026年主动型人工智能的科研进展，涵盖基于LLM的自主Agent基础模型、持续运行架构、以及Harness工程的核心技术突破。'
+image: 'cover.png'
 tags: [AI Agent, LLM, Harness Engineering, 自主智能体]
 category: AI Research
 draft: false
