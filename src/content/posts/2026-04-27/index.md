@@ -2,7 +2,7 @@
 title: "OpenSpec：规范驱动的 AI 编程开发框架"
 published: 2026-04-27
 description: '介绍 OpenSpec 的核心理念、工作流程和使用方法，探讨如何通过规范驱动提升 AI 编程的效率和质量'
-image: './2026-04-27/cover.png'
+image: ''
 tags: ['AI', '编程工具', 'OpenSpec', '开发流程']
 category: '技术'
 draft: false
