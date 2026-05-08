@@ -18,4 +18,10 @@ export const donors: Donor[] = [
 		date: "2025-12-25",
 		message: "献给Chito",
 	},
+	{
+		name: "洛临",
+		amount: "¥50.00",
+		date: "2026-05-08",
+		message: "献给Chito",
+	},
 ];
