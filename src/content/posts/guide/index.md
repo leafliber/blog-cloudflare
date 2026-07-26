@@ -1,51 +1,17 @@
 ---
-title: Simple Guides for Fuwari
-published: 2024-04-01
-description: "How to use this blog template."
-image: "./cover.jpeg"
-tags: ["Fuwari", "Blogging", "Customization"]
-category: Guides
+title: 站点重建中
+published: 2025-09-02
+description: "重建站点"
+image: "./me.jpg"
+tags: ["重建", "新UI"]
+category: ''
 draft: false
 ---
 
-> Cover image source: [Source](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg)
+### 站点重建原因
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+原本的博客站，是用Wordpress搭建的，一直运行了6年时间，但是因为服务器到期，而且期间很多服务都转移到docker上，让我有了建一个静态博客站的想法。当时的Wordpress是直接占用服务器搭建的lnmp环境，这在当时的个人用户中还处于比较多的情况。而现在，不使用虚拟化的传统php站越来越少了。不过现实是，这种运行的安全风险还是很高的，既要处理博客站点的漏洞，又要关注服务器系统的漏洞，两个地方只要有一个层面出问题，这个网站就会面临关闭。所以就有了这个新网站的尝试。
 
-## Front-matter of Posts
+### 关于旧内容
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
----
-```
-
-| Attribute     | Description                                                                                                                                                                                                 |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `draft`        | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
-
-## Where to Place the Post Files
-
-
-
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
-
-```
-src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
-```
+一些现在还能用得上的知识类，我会逐渐转移过来，而一些随笔和过时的技术，就让它们永远封存在我的数据库中吧。（也许哪一天我自己会回来看看👀）

@@ -1,0 +1,27 @@
+export interface Donor {
+	name: string;
+	amount: string;
+	date: string;
+	message?: string;
+}
+
+export const donors: Donor[] = [
+	{
+		name: "洛临",
+		amount: "¥50.00",
+		date: "2026-05-08",
+		message: "献给Chito",
+	},
+	{
+		name: "ψ(ﾟДﾟ)ψ",
+		amount: "¥30.00",
+		date: "2025-12-25",
+		message: "献给Chito",
+	},
+	{
+		name: "白漠",
+		amount: "¥30.00",
+		date: "2025-12-25",
+		message: "献给Chito",
+	},
+];

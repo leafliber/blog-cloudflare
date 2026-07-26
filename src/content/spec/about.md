@@ -1,9 +1,22 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
-::github{repo="saicaca/fuwari"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+## 我是谁
+
+我是Leafiber，现在是应届毕业生，正在追求提升自己  
+前信竟选手
+
+## 这里是
+
+这里是我的小小心镜🪞  
+我会在这里分享关于我的故事，我踩的坑，一些总结等等  
+因为不爱发朋友圈，很多时候都会在这里更新内容  
+
+## 兴趣有
+
+喜欢折腾，Docker、NAS、智能家居、QQBot等等，都玩的转  
+喜欢摄影，有一个入门的相机和镜头  
+喜欢解谜，ccbc比赛基本上每年参加  
+喜欢旅游，会用镜头记录下生活  
+喜欢动漫，有自己的私人动漫订阅服务器  
+喜欢游戏，xx、xx:xxxx、xxx都有在玩  
